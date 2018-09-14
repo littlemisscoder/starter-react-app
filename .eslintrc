@@ -1,0 +1,54 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "globals": {
+    "fetch": false,
+    "document": true,
+    "process": true,
+    "module": true,
+    "localStorage": true,
+    "global": true,
+    "Headers": true,
+    "Response": true,
+    "Blob": true,
+    "Promise": true,
+    "window": true,
+    "navigator": true,
+    "URL": true,
+    "console": true
+  },
+  "plugins": ["react", "jest"],
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "max-len": [0],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".js", ".jsx"] }
+    ],
+    "react/prop-types": [2],
+    "react/default-props-match-prop-types": [
+      2,
+      { "allowRequiredDefaults": true }
+    ],
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "ignoreRefs": false,
+        "allowArrowFunctions": false,
+        "allowFunctions": false,
+        "allowBind": false
+      }
+    ]
+  }
+}

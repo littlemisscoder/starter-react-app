@@ -1,0 +1,20 @@
+.register-screen-container {
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.register-screen-content-container {
+  max-width: 500px;
+  flex: 1;
+  text-align: center;
+}
+
+.register-inputs {
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.register-link-footer {
+  margin-top: 20px;
+}
