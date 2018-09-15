@@ -107,7 +107,7 @@ export default class LoginScreenComponent extends PureComponent {
             </Button>
           </form>
           <div className="login-link-footer">
-            {"Don't have an account?"}
+            {"Don't have an account? "}
             <Link to="/register" onClick={this.handleResetAuth}>
               Register
             </Link>
